@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clothing Store</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="css/style.css">
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
-    >
+    />
   </head>
   <body>
     <!-- Zawartość strony -->
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
       <div class="container-fluid">
         <!-- Nazwa sklepu -->
-        <a class="navbar-brand" href="#">Clothing Store</a>
+        <a class="navbar-brand" href="#">CLOTHING STORE</a>
 
         <!-- Przycisk hamburgera -->
         <button
@@ -47,33 +47,33 @@
                 class="nav-link dropdown-toggle"
                 href="#"
                 id="produktyDropdown"
+                role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Products
               </a>
-              <div class="dropdown-menu" aria-labelledby="produktyDropdown">
-                <a class="dropdown-item" href="#">Electronics</a>
-                <a class="dropdown-item" href="#">Clothing</a>
-                <a class="dropdown-item" href="#">Accessories</a>
-              </div>
+              <ul class="dropdown-menu" aria-labelledby="produktyDropdown">
+                <li><a class="dropdown-item" href="#">Electronics</a></li>
+                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                <li><a class="dropdown-item" href="#">Accessories</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+              <a class="nav-link" href="#">Contact</a></li>
           </ul>
 
-          <!-- Przycisk Grupy -->
-          <div class="btn-group ms-auto" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning">
+          <!-- Przyciski w nawigacji -->
+          <div class="d-flex ms-auto">
+            <a href="#" class="btn btn-secondary me-0 rounded-0">
               <i class="fas fa-shopping-cart"></i> Cart
-            </button>
-            <button type="button" class="btn btn-success">
+            </a>
+            <a href="#" class="btn btn-secondary me-3 rounded-0">
               <i class="fas fa-user"></i> Account
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -83,28 +83,49 @@
     <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="w-100" src="https://cdn.pixabay.com/photo/2024/02/21/11/17/ai-generated-8587423_1280.png" alt="image">
+          <img
+            class="w-100"
+            src="https://cdn.pixabay.com/photo/2024/02/21/11/17/ai-generated-8587423_1280.png"
+            alt="image"
+          />
           <div class="carousel-caption">
             <h4>Elevate Your Style</h4>
-            <h3>Discover the perfect finishing touches with our wide range of accessories, designed to complement any outfit and express your unique style.</h3>
-            <a class="btn btn-warning" href="#">Learn More</a>
+            <h3>
+              Discover the perfect finishing touches with our wide range of
+              accessories, designed to complement any outfit and express your
+              unique style.
+            </h3>
+            <a class="btn btn-secondary" href="#">Learn More</a>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="w-100" src="https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082_640.jpg" alt="image">
+          <img
+            class="w-100"
+            src="https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082_640.jpg"
+            alt="image"
+          />
           <div class="carousel-caption">
             <h4>Fashion for Every Occasion</h4>
-            <h3>Explore our collection of stylish clothing, from casual wear to formal attire, ensuring you look your best no matter the event.</h3>
-            <a class="btn btn-warning" href="#">Shop Now</a>
+            <h3>
+              Explore our collection of stylish clothing, from casual wear to
+              formal attire, ensuring you look your best no matter the event.
+            </h3>
+            <a class="btn btn-secondary" href="#">Shop Now</a>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="w-100" src="https://media.istockphoto.com/id/1471478235/photo/happy-couple-hugging-doing-shopping-walking-together-in-hypermarket.jpg?s=612x612&w=0&k=20&c=m3bg6lMG88rULtOkoegCzZS2r-yUb_Hnd0tsoT3kvKI=" alt="image">
+          <img
+            class="w-100"
+            src="https://media.istockphoto.com/id/1471478235/photo/happy-couple-hugging-doing-shopping-walking-together-in-hypermarket.jpg?s=612x612&w=0&k=20&c=m3bg6lMG88rULtOkoegCzZS2r-yUb_Hnd0tsoT3kvKI="
+            alt="image"
+          />
           <div class="carousel-caption">
             <h4>Create Memories While You Shop</h4>
-            <h3>Enjoy a fun and memorable shopping experience together, finding the perfect pieces that suit both your tastes and lifestyle.
+            <h3>
+              Enjoy a fun and memorable shopping experience together, finding
+              the perfect pieces that suit both your tastes and lifestyle.
             </h3>
-            <a class="btn btn-warning" href="#">Visit Us</a>
+            <a class="btn btn-secondary" href="#">Visit Us</a>
           </div>
         </div>
       </div>
@@ -118,14 +139,11 @@
       </button>
     </div>
 
-    <!-- Sekcja produktów -->
-    <section class="products py-5">
-      <div class="container">
-        <h2>New Products</h2> <!-- Nagłówek sekcji -->
+    <section>
+      <div class="container py-5">
         <div class="row">
           <div class="col-lg-3">
-            <!-- Lista marek -->
-            <h5>Brands</h5>
+            <h2>Brands</h2>
             <div class="list-group d-sm-flex flex-sm-row flex-md-column">
               <a href="#" class="list-group-item list-group-item-action">Adidas</a>
               <a href="#" class="list-group-item list-group-item-action">Apart</a>
@@ -139,35 +157,53 @@
           </div>
           <div class="col-lg-9">
             <!-- Zawartość drugiej kolumny (np. lista nowych produktów) -->
-            <h5>New Arrivals</h5>
+            <h2>New Arrivals</h2>
             <div class="row">
-              <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="col-sm-6 col-lg-4 mb-4">
                 <div class="card">
-                  <img src="https://cdn.pixabay.com/photo/2015/05/11/14/51/legs-762565_640.jpg" class="card-img-top" alt="...">
+                  <div class="card-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/11/14/51/legs-762565_640.jpg" class="card-img-top" alt="product1"/>
+                  </div>
                   <div class="card-body">
                     <h5 class="card-title">Nike</h5>
-                    <p class="card-text">The Nike Air Max 270 offers maximum comfort with its large Air unit and sleek design, perfect for both athletic and casual wear.</p>
-                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <p class="card-text">
+                      The Nike Air Max 270 offers maximum comfort with its large
+                      Air unit and sleek design, perfect for both athletic and
+                      casual wear.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Buy Now</a>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="col-sm-6 col-lg-4 mb-4">
                 <div class="card">
-                  <img src="https://cdn.pixabay.com/photo/2015/09/04/23/03/clothes-922988_640.jpg" class="card-img-top" alt="...">
+                  <div class="card-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/04/23/03/clothes-922988_640.jpg" class="card-img-top" alt="product2"/>
+                  </div>
                   <div class="card-body">
                     <h5 class="card-title">Puma</h5>
-                    <p class="card-text">The Puma RS-X3 combines bold colors and layered materials for a standout look, featuring RS technology for top-notch comfort.</p>
-                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <p class="card-text">
+                      The Puma RS-X3 combines bold colors and layered materials
+                      for a standout look, featuring RS technology for top-notch
+                      comfort.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Buy Now</a>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <div class="col-sm-6 col-lg-4 mb-4">
                 <div class="card">
-                  <img src="https://cdn.pixabay.com/photo/2022/10/23/12/40/fashion-7541196_1280.jpg" class="card-img-top" alt="...">
+                  <div class="card-image">
+                    <img src="https://cdn.pixabay.com/photo/2022/10/23/12/40/fashion-7541196_1280.jpg" class="card-img-top" alt="product3"/>
+                  </div>
                   <div class="card-body">
                     <h5 class="card-title">Levi's</h5>
-                    <p class="card-text">Levi's 501 Original Fit Jeans are the iconic straight-leg jeans, known for their durable denim and timeless style, perfect for any occasion.</p>
-                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <p class="card-text">
+                      Levi's 501 Original Fit Jeans are the iconic straight-leg
+                      jeans, known for their durable denim and timeless style,
+                      perfect for any occasion.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Buy Now</a>
                   </div>
                 </div>
               </div>
@@ -176,6 +212,129 @@
         </div>
       </div>
     </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="https://cdn.pixabay.com/photo/2015/01/15/12/46/woman-600225_1280.jpg" class="card-img-top" alt="karta1">
+              <div class="card-body position-absolute">
+                <h5>Winter sale</h5>
+                <a href="#" class="btn btn-secondary">See deals</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="https://cdn.pixabay.com/photo/2017/08/06/17/58/people-2594683_1280.jpg" class="card-img-top" alt="karta2">
+              <div class="card-body position-absolute">
+                <h5>Lookbook</h5>
+                <a href="#" class="btn btn-secondary">Get inspired</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="https://cdn.pixabay.com/photo/2015/10/02/15/07/diary-968603_1280.jpg" class="card-img-top" alt="karta3">
+              <div class="card-body position-absolute">
+                <h5>News and ideas</h5>
+                <a href="#" class="btn btn-secondary">Go to Harbinger blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background-color: white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card text-center p-4">
+              <i class="fas fa-truck fa-2x mb-3"></i>
+              <h4 class="card-title">Free shipping</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-center p-4">
+              <i class="fas fa-money-bill-wave fa-2x mb-3"></i>
+              <h4 class="card-title">60-day refund</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-center p-4">
+              <i class="fas fa-life-ring fa-2x mb-3"></i>
+              <h4 class="card-title">24/7 support</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background-color: #eef2f5;">
+      <div class="container">
+          <div class="row justify-content-between">
+              <div class="col-md-4 mb-3">
+                  <h4>Newsletter</h4>
+                  <form>
+                      <div class="mb-3">
+                          <input type="email" class="form-control" placeholder="Enter email" required>
+                      </div>
+                      <button type="submit" class="btn btn-warning">Submit</button>
+                  </form>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <h4>HARBINGER</h4>
+                  <p>Vestibulum varius neque non posuere dapibus.</p>
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab fa-facebook" style="font-size: 16px; color: #000;"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab fa-twitter" style="font-size: 16px; color: #000;"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab fa-instagram" style="font-size: 16px; color: #000;"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#"><i class="fab fa-youtube" style="font-size: 16px; color: #000;"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <h4>Contact us</h4>
+                  <address>
+                      2795 Cunningham Court,<br>
+                      Rochester Hills 48306 Michigan<br>
+                      <a href="mailto:support@company.com">support@company.com</a>
+                  </address>
+              </div>
+          </div>
+      </div>
+    </section>            
+
+    <footer class="py-2 text-center" style="background-color: #d0dbe1;">
+      <div class="container">
+          <div class="row justify-content-between align-items-center">
+              <div class="col-md-4">
+                  <p class="mb-0">© Harbinger Ltd.</p>
+              </div>
+              <div class="col-md-8 d-flex justify-content-end align-items-center">
+                  <ul class="list-inline mb-0" style="margin-bottom: 0;">
+                      <li class="list-inline-item"><a href="#" class="text-primary" style="text-decoration: none;">About</a></li>
+                      <li class="list-inline-item"><a href="#" class="text-primary" style="text-decoration: none;">Delivery</a></li>
+                      <li class="list-inline-item"><a href="#" class="text-primary" style="text-decoration: none;">Returns</a></li>
+                      <li class="list-inline-item"><a href="#" class="text-primary" style="text-decoration: none;">Privacy policy</a></li>
+                      <li class="list-inline-item"><a href="#" class="text-primary" style="text-decoration: none;">Terms and conditions</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
